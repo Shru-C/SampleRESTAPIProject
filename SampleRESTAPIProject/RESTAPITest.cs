@@ -48,7 +48,7 @@ namespace SampleRESTAPIProject
             // act
             IRestResponse response = client.Execute(request);
 
-            // assert
+            // assert command
             Assert.That(response.StatusCode, Is.EqualTo(expectedHttpStatusCode));
         }
 
