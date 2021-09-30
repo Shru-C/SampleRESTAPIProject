@@ -45,7 +45,7 @@ namespace SampleRESTAPIProject
             RestSharp.RestClient client = new RestSharp.RestClient("http://api.zippopotam.us");
             RestRequest request = new RestRequest($"{countryCode}/{zipCode}", Method.GET);
 
-            // act
+            // act Commnad
             IRestResponse response = client.Execute(request);
 
             // assert command
